@@ -1,0 +1,59 @@
+// this function returns the possible number of cosucative digits that could sum up the given number  
+// for exaple 198 , returns 2  means 11 + 99 + 88 =198 
+
+
+
+public class Sumconsc2 {
+
+	int summ=0; 
+	int numCopy;  
+	int digit; 
+	public int cosucSum(int num ) {
+		
+		
+		numCopy=num ; 
+
+	 return 	sumconst(num , 2 ); 
+		
+	}
+	
+	
+	public int sumconst(int num , int cnt  ) {
+		
+		
+		if(num==0 && num < numCopy )  //  the summation condition does not satisfy 
+			
+			return  sumconst(num/10 , cnt + 1 );
+		else if (num==0)
+			return 0 ; 
+		else if(numCopy==num)  // condition satisfied 
+			return cnt ; 
+		else if(numCopy < num)
+			return 0 ; 
+		else 
+			summ=summ+   concat( num%10 , cnt ); 
+		
+		return  sumconst(num/10 , cnt );
+		
+		
+		
+	
+		
+	}
+	
+	
+	public   int concat(int num , int cnt  ) {
+		
+		int sum=0;
+		for(int i=0; i<cnt ;  i++) {
+			
+			sum=sum + (int) (num*(Math.pow(10, i))); 
+		}
+		
+		return sum; 
+	}
+	
+	
+	
+}
+
