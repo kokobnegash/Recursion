@@ -1,5 +1,5 @@
 # Recursion
-This a collection of Recursive  classes 
+This is  a collection of Recursive  functions 
 Recursion is the technique of making a function call itself. This technique provides a way to break complicated problems down into simple problems which are ..
 ..................................
 Advantages and Disadvantages of Recursion
