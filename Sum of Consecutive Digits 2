@@ -1,4 +1,4 @@
-// this function returns the possible number of cosucative digits that could sum up the given number  
+// this function returns the possible number of consecutive digits that could sum up the given number  
 // for exaple 198 , returns 2  means 11 + 99 + 88 =198 
 
 
