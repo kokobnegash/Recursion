@@ -1,0 +1,35 @@
+
+
+public class BinarySearch {
+	
+	int searchnum ; 
+	public int BinaryS(int [] array,int Searchnum) {
+		
+    
+    this.searchnnum=Searchnum 
+		return binarysearch(val,0,array.length-1 );
+	
+		
+	}
+	
+	
+	public int binarysearch(int[] array , int start , int end ) {
+		
+		int index=end-start /2; 
+		
+		if( end  < 0 || start > val.length-1 )  // value not found 
+			return 0 ; 
+		else if ( val[index]==searchnum) // value found 
+		  return 1 ; 
+		
+		else if(val[index] >searchnum ) // check the left side 
+			return binarysearch(val, start , index-1, searchnum); 
+		else 
+			
+			return binarysearch(val, index +1  , end ); 
+		 
+	}
+	
+	
+
+}
