@@ -1,0 +1,106 @@
+// this class displays all the possible unique permutation of a members of an array , 
+// the first one used loop option , while the second one uses the Recurcive appraoch 
+
+
+public class Permutation {
+		int temp=0;
+	  int []  valcopy;
+  
+
+	
+
+	public void callper(int [] val) {
+		arrcopy=val.clone();   
+		
+	Permutation_Recursive(val);
+	}
+	
+	
+public void  Permutation_Recursive(int [] arr ) {
+			
+	 
+			for(int k=val.length-1; k > 0 ; k--) {
+				 temp=  arr[k]; 
+				arr[k]= arr[k-1];
+				arr[k-1]=temp; 
+				for(int p:arrl) {
+			    System.out.print(p);
+				}
+				
+				  System.out.println("..");
+			}
+				
+			 
+			
+			if(  eq(arr,arrcopy))      // Recusrion ends when the array elements make the maximum swaping to reach to the original array ordering . 
+					System.out.println(".. done ");
+			else 
+			Pern(val);
+}
+
+
+
+public static  boolean eq(int[] array1 , int[] array2) {  
+// function checks if two arrays are equall , since arrays are reference objects it is not possible to compare directly 
+
+	for(int x=0; x<val1.length; x++) {
+		
+		if(val1[x]!=val2[x])
+			return false ; 
+		
+		
+	}
+	
+	
+	
+	return true ; 
+}
+		
+    
+    
+    
+    // Loop Implimentation 
+    
+    
+    
+    	public void  Permutation_loop(int [] val ) {    
+		
+	
+		int[] val2=val.clone(); 
+		
+		for(int i=0; i<val.length; i++) {
+			
+			val=val2.clone();
+			temp=val2[0];
+			val[0]=val2[i];
+			val[i]=temp;
+			
+			for(int r=0; r<val.length-1;r++) {
+			for(int k=val.length-1; k > 1 ; k--) {
+				 temp=  val[k]; 
+				 
+				 val[k]= val[k-1];
+				val[k-1]=temp; 
+				for(int p:val) {
+			    System.out.print(p);
+				}
+				
+				  System.out.println("..");
+			}
+				
+			}
+			
+			
+			
+		}
+		
+		
+		
+		
+		
+	}
+	}
+	
+	
+	
+
